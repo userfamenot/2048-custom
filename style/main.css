@@ -15,12 +15,27 @@ body {
   display: block;
   clear: both; }
 
-h1.title {
+input {
+  font-size: 18px;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  background: #faf8ef;
+  color: #776e65;
+  border: none;
+}
+
+#site-title {
   font-size: 80px;
   font-weight: bold;
   margin: 0;
   display: block;
-  float: left; }
+  float: left;
+  width: 3.6em;
+}
+
+#site-desc {
+    height: 2em;
+    width: 100%;
+}
 
 @-webkit-keyframes move-up {
   0% {
@@ -118,6 +133,20 @@ hr {
   margin-top: 20px;
   margin-bottom: 30px; }
 
+.tile-input {
+  margin-top: 0.5em;
+  margin-left: 0.3em;
+  border-bottom: 1px solid #d8d4d0;
+  width: 3em; }
+
+button {
+  margin-top: 2em;
+  width: 5em;
+  height: 1.7em;
+  border: none;
+  background: #d8d4d0;
+  color: #776e65;
+}
 .container {
   width: 500px;
   margin: 0 auto; }

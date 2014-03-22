@@ -22,13 +22,13 @@
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">2048</h1>
+      <input class="title" id="site-title" value="2048"></input>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
       </div>
     </div>
-    <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+    <input class="game-intro" value="Join the numbers and get to the 2048 tile!" id="site-desc"></input>
 
     <div class="game-container">
       <div class="game-message">
@@ -73,15 +73,30 @@
     </div>
 
     <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same character touch, they <strong>merge into one!</strong>
     </p>
+    <p class="game-explanation">
+      <strong class="important">Customize:</strong> Just type in whatever you fancy and create <strong>your own 2048 game!</strong>  Don't forget to <strong>share with your friends!</strong>
+    </p>
+    <input type="text" class="tile-input" value="A" id="level-1"></input>
+    <input type="text" class="tile-input" value="B" id="level-2"></input>
+    <input type="text" class="tile-input" value="C" id="level-3"></input>
+    <input type="text" class="tile-input" value="D" id="level-4"></input>
+    <input type="text" class="tile-input" value="E" id="level-5"></input>
+    <input type="text" class="tile-input" value="F" id="level-6"></input>
+    <input type="text" class="tile-input" value="G" id="level-7"></input>
+    <input type="text" class="tile-input" value="H" id="level-8"></input>
+    <input type="text" class="tile-input" value="I" id="level-9"></input>
+    <input type="text" class="tile-input" value="J" id="level-10"></input>
+    <input type="text" class="tile-input" value="K" id="level-11"></input>
+    <input type="text" class="tile-input" value="L" id="level-12"></input></br>
+
+    <button onclick="goCustom()"><strong class="important">Go!</strong></button>
+
+    </br></br></br>
     <hr>
     <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
-    </p>
-    <hr>
-    <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    The <a href="http://git.io/2048">original 2048</a> was created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> This site is a fork by <a href="http://wzhd.github.io" target="_blank">wzhd</a>.
     </p>
     <div class="sharing">
       <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out 2048, a game where you join numbers to score high! #2048game" data-via="gabrielecirulli" data-url="http://git.io/2048" data-counturl="http://gabrielecirulli.github.io/2048/">Tweet</a>
@@ -104,6 +119,7 @@
     </div>
   </div>
 
+  <script src="js/customize.js"></script>
   <script src="js/animframe_polyfill.js"></script>
   <script src="js/keyboard_input_manager.js"></script>
   <script src="js/html_actuator.js"></script>
