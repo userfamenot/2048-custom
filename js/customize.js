@@ -15,7 +15,7 @@ var levelSeq = {
 };
 
 function goCustom() {
-  var query = '/?';
+  var query = window.location.href + '?';
   for (var i = 1; i <= 12; i++) {
     query += 'l' + i + '=';
     query += document.getElementById('level-' + i).value + '&';
