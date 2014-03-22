@@ -15,7 +15,7 @@ var levelSeq = {
 };
 
 function goCustom() {
-  var query = window.location.href + '?';
+  var query = 'http://wzhd.github.io/2048-variably/?';
   for (var i = 1; i <= 12; i++) {
     query += 'l' + i + '=';
     query += document.getElementById('level-' + i).value + '&';
